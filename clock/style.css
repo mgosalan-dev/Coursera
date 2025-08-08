@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Orbitron', monospace;
+  overflow: hidden;
+  color: #fff;
+}
+
+.clock-container {
+  position: relative;
+  padding: 40px 60px;
+  border-radius: 20px;
+  background: rgba(20, 12, 70, 0.8);
+  box-shadow:
+    0 0 15px #8e44ad,
+    0 0 30px #9b59b6,
+    0 0 45px #8e44ad,
+    0 0 60px #9b59b6;
+}
+
+.clock {
+  font-size: 6rem;
+  letter-spacing: 8px;
+  text-align: center;
+  text-shadow:
+    0 0 10px #9b59b6,
+    0 0 20px #8e44ad,
+    0 0 30px #7d3c98,
+    0 0 40px #9b59b6,
+    0 0 70px #8e44ad;
+}
+
+.magic-glow {
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  right: -15px;
+  bottom: -15px;
+  border-radius: 30px;
+  pointer-events: none;
+  background: radial-gradient(circle at center, #9b59b6, transparent 70%);
+  filter: blur(25px);
+  animation: pulseGlow 3s infinite ease-in-out;
+  z-index: -1;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    filter: blur(20px);
+    opacity: 0.6;
+  }
+  50% {
+    filter: blur(35px);
+    opacity: 1;
+  }
+}
