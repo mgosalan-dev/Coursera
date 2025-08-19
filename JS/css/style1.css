@@ -3,3 +3,16 @@ body{
     font-family: Arial, sans-serif;
     color: turquoise;
 }
+
+p > strong {
+    color: yellow;
+}
+
+p > strong > u {
+    color: red;
+ }
+
+
+p > strong > u:hover {
+    color: blue;
+}
