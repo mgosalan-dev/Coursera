@@ -12,6 +12,9 @@ os tipos primitivos em javascript são:
    - array
 - function
 
+no javascript, os tipos primitivos são dinâmicos, ou seja,
+podemos atribuir qualquer tipo de valor a uma variável
+
 
 diferente do navegador que para o usuario digitar algo no prompt
 no node.js o prompt não existe, mas podemos usar um pacote externo
